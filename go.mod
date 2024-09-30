@@ -1,6 +1,8 @@
 module github.com/MickMake/GoSungrow
 
-go 1.19
+go 1.21
+
+toolchain go1.22.2
 
 //replace github.com/MickMake/GoUnify => ../../GoUnify
 
@@ -34,7 +36,10 @@ require (
 	gopkg.in/yaml.v2 v2.4.0
 )
 
-require github.com/MickMake/GoUnify v1.0.3-0.20230904042338-0db745f1bada
+require (
+	github.com/MickMake/GoUnify v1.0.3-0.20230904042338-0db745f1bada
+	github.com/andreburgaud/crypt2go v1.4.0
+)
 
 require (
 	github.com/MichaelMure/go-term-markdown v0.1.4 // indirect
@@ -42,7 +47,6 @@ require (
 	github.com/abiosoft/ishell/v2 v2.0.2 // indirect
 	github.com/abiosoft/readline v0.0.0-20180607040430-155bce2042db // indirect
 	github.com/alecthomas/chroma v0.7.1 // indirect
-	github.com/andreburgaud/crypt2go v1.4.0 // indirect
 	github.com/blang/semver v3.5.1+incompatible // indirect
 	github.com/blend/go-sdk v1.20220411.3 // indirect
 	github.com/bndr/gotabulate v1.1.2 // indirect
